@@ -5,12 +5,16 @@ body
 	margin: 0px;
 }
 
+
 header {
 	padding: 10px;
 	background-color: rgb(20, 130, 250);
 	text-align: center;
 	color:white;
 }
+
+
+
 
 aside {
 	background-color: white;
@@ -19,7 +23,21 @@ aside {
 	width: 15%;
 	text-align: center;
 	padding-top: 20px;
+	
+	margin-top: 20px;
+	margin-left: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
+
+
+#ensTrie
+{
+	margin-top: 10px;
+}
+
+
+
 
 form
 {
@@ -41,7 +59,6 @@ form
 
 #vue
 {
-	
 	margin-top: 20px;
 	border-style: solid;
 	border-width: 1px;
@@ -55,18 +72,28 @@ form
 
 
 
+
 a:visited
 {
 	color: blue;
 }
 
+
+
+
 img {
 	max-width: 100%;
 }
 
+
+
+
 #date {
 	font-weight: bold;
 }
+
+
+
 
 #form {
 	background-color: rgb(20, 130, 250);
@@ -80,9 +107,13 @@ img {
 	box-shadow: 0px 0px 15px rgb(100, 100, 100);
 }
 
+
 #formElement {
 	margin: 5px;
 }
+
+
+
 
 
 footer {
@@ -91,6 +122,7 @@ footer {
 	background-color: white;
 	text-align: center;
 	padding-top: 50px;
+	max-height: 80px;
 }
 
 

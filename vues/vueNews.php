@@ -14,8 +14,10 @@
 
 		<aside>
 			<b>Trier par:</b><br>
-			<a href="index.php?">date</a><br>
-			<a href="index.php?trie=site">site</a>
+			<div id="ensTrie">
+				<a href="index.php?">date</a><br>
+				<a href="index.php?trie=site">site</a>
+			</div>
 		</aside>
 
 		<form id="form" method="POST" action="index.php?action=connexion">

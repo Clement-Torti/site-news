@@ -12,11 +12,17 @@
 			<h4> Vous devez fournir des informations correctes pour continuer </h4>
 
 			<form method="POST" action="index.php?action=connexion">
-				Login:<br>
-				<input type="text" name="login"><br>
-				Mdp:<br>
-				<input type="password" name="mdp"><br>
-				<input type="submit" value="Connexion"><br>
+				<div id="textBoxLogin">
+					Login:<br>
+					<input type="text" name="login"><br>
+				</div>
+				<div id="textBoxMdp">
+					Mdp:<br>
+					<input type="password" name="mdp"><br>
+				</div>
+				<div id="bouton">
+					<input type="submit" value="Connexion"><br>
+				</div>
 			</form>
 	
 			<a href="index.php"> revenir à la page d'accueil </a>
