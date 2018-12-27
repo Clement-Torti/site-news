@@ -13,12 +13,12 @@
 	
 		if(isset($_SESSION['role']) && isset($_SESSION['login'])) {
 
-			echo "<aside>Role: ".$_SESSION['role']."<br>Nom d'utilisateur: ".$_SESSION['login']."<br></aside>";
+			echo "<aside>Role : ".$_SESSION['role']."<br><br>Nom d'utilisateur : ".$_SESSION['login']."<br></aside>";
 		}
 		
 		if(isset($sites)) {
 			echo "<table id='table'>";
-			echo "<tr><th>Index</th> <th>Nom du site</th> <th>URL du flux RSS</th> <td>Action</td></tr>";
+			echo "<tr><th>Index</th> <th>Nom du site</th> <th>URL du flux RSS</th> <th>Action</th></tr>";
 
 			foreach($sites as $site) {
 				$id = $site->getId();
@@ -48,9 +48,12 @@
 		<input id="formElement" type="submit" value="Ajouter site"/><br>
 	</form>
 
-	<a href="index.php"> Quitter le mode admin </a>
+	<div id="retour"> <!-- division utile pour permettre les margin côté CSS -->
+		<a id="retour" href="index.php"> Quitter le mode admin </a>
+		<!-- id sur le lien utile pour permettre le text-decoration:none côté CSS -->
+	</div>
 
-
+	
 	<footer>
 			Site de news par lecture de flux RSS réalisé par Florent et Clément
 			2A-G7 de l'université informatique Clermont-Auvergne 2018

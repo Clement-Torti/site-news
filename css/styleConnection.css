@@ -21,15 +21,15 @@ body
 }
 
 
-#textBoxLogin
+#textBox
 {
-	color: red;
+	margin-top:10px;
 }
 
 
-#textBoxMdp
+#divMdp
 {
-	color: red;
+	margin-top:20px;
 }
 
 
@@ -37,3 +37,22 @@ body
 {
 	margin-top: 20px;
 }
+
+
+a:visited
+{
+	color: blue;
+}
+
+
+#retour
+{
+	margin-top:40px;
+	text-decoration:none;
+}
+
+
+
+
+
+
