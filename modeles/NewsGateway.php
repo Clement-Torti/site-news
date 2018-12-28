@@ -55,13 +55,20 @@
 			
 			// Tries les news selon le paramètre passé en argument
 			$trie = NULL;
+
+			if(isset($_COOKIE["trie"])) {
+				$trie = $_COOKIE["trie"];
+			}
+
 			if(isset($_REQUEST["trie"])) {
 				$trie = Validation::validateAction($_REQUEST["trie"]);
+				setcookie("trie", $trie, time() + 365 * 24 * 3600);
 			}
 
 			switch($trie) {
 				case "site":
 				break;
+				case "date":
 				default:
 					usort($news, function($a, $b) {
 					$t1 = strtotime($a->getDate());

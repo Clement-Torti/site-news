@@ -25,6 +25,7 @@
 					$this->supprimerSite();
 					break;
 				case "deconnexion":
+					$this->deconnexion();
 					break;
 				default:
 					setErreur("Action inconnue", "Erreur d'appel php");
@@ -40,7 +41,6 @@
 			$adminMdl = new AdminModel();
 			
 			$sites = $adminMdl->getAllSites();
-			
 			
 			require($vues["vueAdmin"]);
 		}

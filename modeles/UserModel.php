@@ -11,15 +11,5 @@
 
 		}
 		
-		public function connexion(string $l, string $m): bool {
-			global $mdp, $login;
-		
-			if($m == $mdp && $l == $login) {
-				return true;
-			} else {
-				return false;
-			}
-		}
-		
 	}
 ?>

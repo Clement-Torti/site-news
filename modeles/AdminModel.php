@@ -84,11 +84,10 @@
 			}
 
 			$name = Validation::validateAction($_REQUEST["name"]);
-			$url = Validation::validateAction($_REQUEST["url"]);
 
 			$sitesGw = new SitesGateway($con);
 
-			$sitesGw->delSites($name, $url);
+			$sitesGw->delSites($name);
 
 			return true;
 		}

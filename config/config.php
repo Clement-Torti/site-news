@@ -3,7 +3,7 @@
 	$rep = __DIR__.'/../';
 	
 	// BD
-	$login = "root";
+	$login = "cltorti";
 	$mdp = ""; 
 	
 	// Vue

@@ -7,16 +7,14 @@
 		}
 		
 		public function isAdmin(string $login, string $mdp): bool {
-			$query = "SELECT COUNT(*) as nb FROM TAdmin WHERE login=:login AND mdp=:mdp";
+			$query = "SELECT mdp FROM TAdmin WHERE login=:login";
 			
-			$this->con->executeQuery($query, [":login" => [$login, PDO::PARAM_STR],
-											":mdp" =>[$mdp, PDO::PARAM_STR]]);
+			$this->con->executeQuery($query, [":login" => [$login, PDO::PARAM_STR]]);
 			
 			$array = $this->con->getResults();
 			$a = $array[0];
 			
-
-			return $a["nb"] == 1;
+			return password_verify($mdp, $a["mdp"]);
 		}
 	}
 ?>

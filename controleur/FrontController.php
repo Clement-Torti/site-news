@@ -2,7 +2,7 @@
 
 	class FrontController {
 		public function __construct() {
-			global $vues;
+			global $vues, $dErreur;
 			
 			$listeAction_Admin = ["deconnexion", "afficherAccueil", "ajouterSite", "supprimerSite"];
 

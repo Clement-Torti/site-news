@@ -14,10 +14,8 @@
 
 		<aside>
 			<b>Trier par:</b><br>
-			<div id="ensTrie">
-				<a href="index.php?">date</a><br>
-				<a href="index.php?trie=site">site</a>
-			</div>
+			<a href="index.php?trie=date">date</a><br>
+			<a href="index.php?trie=site">site</a>
 		</aside>
 
 		<form id="form" method="POST" action="index.php?action=connexion">
@@ -36,6 +34,7 @@
 		
 		
 		<?php
+			
 			if (isset($dVue)) {
 				echo "<div id='ensVues'>";
 					foreach($dVue as $news) {

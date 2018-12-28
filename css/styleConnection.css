@@ -16,43 +16,5 @@ body
 	
 	margin-left:30%;
 	margin-right:30%;
-
 	margin-top: 50px;
 }
-
-
-#textBox
-{
-	margin-top:10px;
-}
-
-
-#divMdp
-{
-	margin-top:20px;
-}
-
-
-#bouton
-{
-	margin-top: 20px;
-}
-
-
-a:visited
-{
-	color: blue;
-}
-
-
-#retour
-{
-	margin-top:40px;
-	text-decoration:none;
-}
-
-
-
-
-
-
