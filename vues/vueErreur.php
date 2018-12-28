@@ -13,18 +13,21 @@
 		<?= $dErreur["message"] ?>
 		</h3>
 		
+		<!-- Récupération dans un tableau des champs du formulaire pour pouvoir les retourner à la page Admin -->
 		<?php
-			if(isset($_REQUEST['name']) && isset($_REQUEST['url']))
-			{
-				$name=$_REQUEST['name'];
-				$url=$_REQUEST['url'];
-			}
+			$params=['action' => 'afficherAccueil',
+					'name' => $_REQUEST["name"],
+					'url' => $_REQUEST["url"]
+					];
 		?>
 		
 		
 		<div id="lien"> <!-- division utile pour permettre les margin côté CSS -->
 			<a id="lien" href="index.php"> Revenir à la page d'accueil </a></br></br>
-			<a id="lien" href="index.php?action=afficherAccueil"> Revenir en page admin </a> 
+			
+			<!-- Permet de garder en mémoire les champs du formulaire lors d'un retour sur la page Admin -->
+			<!-- Permet de passer des variables en GET -->
+			<a id="lien" href=<?php echo 'index.php?'.http_build_query($params); ?>> Revenir en page admin </a> 
 			<!-- id sur les liens utile pour permettre le text-decoration:none côté CSS -->
 		</div>
 	</body>

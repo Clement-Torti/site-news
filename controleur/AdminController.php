@@ -41,6 +41,7 @@
 			
 			$sites = $adminMdl->getAllSites();
 			
+			
 			require($vues["vueAdmin"]);
 		}
 		

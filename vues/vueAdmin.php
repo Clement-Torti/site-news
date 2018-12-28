@@ -27,7 +27,7 @@
 
 				echo "<tr><td>$id</td> <td>$name</td> <td>$url</td>";
 				echo "<td>
-						<form method='POST' action='index.php?action=supprimerSite&name=".$site->getName()."'>
+						<form method='POST' action='index.php?action=supprimerSite&name=".$name."&url=".$url."'>
 							<input type='submit' value='Supprimer'/>
 						</form> 
 					</td>";
@@ -41,9 +41,10 @@
 	<form id="ajouterSite" method="POST" action="index.php?action=ajouterSite">
 		<h3>Ajouter un flux RSS</h3>
 		Name:
-		<input id="formElement" type="text" name="name"/><br>
+		<input id="formElement" type="text" name="name" value="<?php if(isset($_REQUEST["name"])) { echo $_REQUEST["name"]; } ?>"/><br>
+
 		Url:
-		<input id="formElement" type="text" name="url"/><br>
+		<input id="formElement" type="text" name="url" value="<?php if(isset($_REQUEST["url"])) { echo $_REQUEST["url"]; } ?>"/><br>
 
 		<input id="formElement" type="submit" value="Ajouter site"/><br>
 	</form>
