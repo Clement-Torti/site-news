@@ -2,8 +2,11 @@ body
 {
 	background-color: rgb(235,235,235);
 	font-family: Arial;
+	text-align:center;
 	margin: 0px;
+	margin-top:40px;
 }
+
 
 #main {
 	border-style: solid;
@@ -17,4 +20,17 @@ body
 	margin-left:30%;
 	margin-right:30%;
 	margin-top: 50px;
+}
+
+
+#lien
+{
+	margin-top:60px;
+	text-decoration:none;
+}
+
+
+a:visited
+{
+	color:blue;
 }

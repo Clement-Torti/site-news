@@ -12,14 +12,23 @@
 			<h4> Vous devez fournir des informations correctes pour continuer </h4>
 
 			<form method="POST" action="index.php?action=connexion">
-				Login:<br>
-				<input type="text" name="login"><br>
-				Mdp:<br>
-				<input type="password" name="mdp"><br>
-				<input type="submit" value="Connexion"><br>
+				<div>
+					Login:<br>
+					<input id="textBox" type="text" name="login"><br>
+				</div>
+				<div id="divMdp">
+					Mdp:<br>
+					<input id="textBox" type="password" name="mdp"><br>
+				</div>
+				<div id="bouton">
+					<input type="submit" value="Connexion"><br>
+				</div>
 			</form>
 	
-			<a href="index.php"> revenir à la page d'accueil </a>
+			<div id="retour"> <!-- division utile pour permettre le margin-top côté CSS -->
+				<a id="retour" href="index.php"> Revenir à la page d'accueil </a>
+				<!-- id sur le lien utile pour permettre le text-decoration:none côté CSS -->
+			</div>
 		</div>
 
 	</body>

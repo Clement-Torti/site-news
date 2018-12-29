@@ -7,7 +7,8 @@
 		Autoload::charger();
 		
 		// Chargement de la connection à la base
-		$con = new Connection("mysql:host=localhost; dbname=dbcltorti", "root", "");
+		//$con = new Connection("mysql:host=localhost; dbname=dbcltorti", "root", "");
+		$con = new Connection("mysql:host=localhost; dbname=projet_news", "root", "");
 		
 		// Chargement de la session
 		session_start();
