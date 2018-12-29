@@ -34,8 +34,20 @@ aside {
 #ensTrie
 {
 	margin-top: 10px;
+	text-decoration:none;
 }
 
+
+#trieDate
+{
+	text-decoration:none;
+}
+
+
+#trieSite
+{
+	text-decoration:none;
+}
 
 
 

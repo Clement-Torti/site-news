@@ -13,7 +13,7 @@
 	
 		if(isset($_SESSION['role']) && isset($_SESSION['login'])) {
 
-			echo "<aside>Rôle: ".$_SESSION['role']."<br>Nom d'utilisateur: ".$_SESSION['login']."<br></aside>";
+			echo "<aside>Rôle: ".$_SESSION['role']."<br><br>Nom d'utilisateur: ".$_SESSION['login']."<br></aside>";
 		}
 		
 		if(isset($sites)) {

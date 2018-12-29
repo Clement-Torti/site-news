@@ -14,9 +14,10 @@
 
 		<aside>
 			<b>Trier par:</b><br>
-			<div id="ensTrie">
-				<a href="index.php?trie=date">date</a><br>
-				<a href="index.php?trie=site">site</a>
+			<div id="ensTrie"> <!-- division utile pour permettre les margin côté CSS -->
+				<a id="trieDate" href="index.php?trie=date">date</a><br>
+				<a id="trieSite" href="index.php?trie=site">site</a>
+				<!-- id sur les liens utile pour permettre le text-decoration:none côté CSS -->
 			</div>
 		</aside>
 

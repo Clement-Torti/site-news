@@ -19,7 +19,7 @@
 			<?php if(isset($dErreur["message"])) {
 						echo $dErreur["message"];
 						}  else {
-							echo "Veuillez contacter les webmasters: Clement.TORTI@etu.uca.fr<br>Florent.BECOUZE@etu.uca.fr";
+							echo "Veuillez contacter les webmasters: <br><br>Clement.TORTI@etu.uca.fr<br>Florent.BECOUZE@etu.uca.fr";
 						}
 			?>
 		</h3>
