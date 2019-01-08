@@ -7,7 +7,7 @@
 		}
 		
 		public function isAdmin(string $login, string $mdp): bool {
-			$query = "SELECT mdp FROM TAdmin WHERE login=:login";
+			$query = "SELECT mdp FROM tadmin WHERE login=:login";
 			
 			$this->con->executeQuery($query, [":login" => [$login, PDO::PARAM_STR]]);
 			

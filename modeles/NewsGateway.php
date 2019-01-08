@@ -33,7 +33,7 @@
 		}
 		*/
 
-		// Parcours tous les sites référencés et récupère pur chaque les dernier news
+		// Parcours tous les sites référencés et récupère pour chaque les dernières news
 		public function getAllNews() {
 			global $con;
 
@@ -53,7 +53,7 @@
 			}
 
 			
-			// Tries les news selon le paramètre passé en argument
+			// Trie les news selon le paramètre passé en argument
 			$trie = NULL;
 
 			if(isset($_COOKIE["trie"])) {

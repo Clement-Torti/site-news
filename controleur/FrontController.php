@@ -5,7 +5,7 @@
 			global $vues, $dErreur;
 			
 			$listeAction_Admin = ["deconnexion", "afficherAccueil", "ajouterSite", "supprimerSite"];
-
+			
 			try {
 				// Role de la personne connecté
 				$a = AdminModel::isAdmin(); // Retourne NULL si non admin

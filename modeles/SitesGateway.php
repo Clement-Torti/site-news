@@ -30,9 +30,10 @@ class SitesGateway {
 											":name"=>[$name, PDO::PARAM_STR]]);
 	}
 
-	public function delSites(string $name) {
-		$query = "DELETE FROM TSites WHERE name=:name";
-		$this->con->executeQuery($query, [":name"=>[$name, PDO::PARAM_STR]]);
+	public function delSites(string $name, string $url) {
+		$query = "DELETE FROM TSites WHERE url=:url AND name=:name";
+		$this->con->executeQuery($query, [":url"=>[$url, PDO::PARAM_STR],
+											":name"=>[$name, PDO::PARAM_STR]]);
 	}
 }
 ?>
